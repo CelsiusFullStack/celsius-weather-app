@@ -1,0 +1,125 @@
+body{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+margin: 0;
+padding: 0;
+    box-sizing: border-box;
+    background-color: #2a9d8f;
+    align-content   : center;
+}
+.progress{
+    position: relative;
+    height: 10px;
+    width: 1110%;
+    border: 10px solid #f4a261;
+    border-radius: 15px;
+}
+.progress .color{
+  display: flex;
+flex-direction: column;
+align-content: center;
+align-items: center;
+width: 100px;
+    position: absolute;
+    background-color: #ffffff;
+    width: 0px;
+    height: 10px;
+    border-radius: 15px;
+    animation: progres 4s infinite linear;    
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 8em;
+
+    align-content: center;
+    align-items: center;
+  }
+
+.weather {
+
+    width: 300px;
+    border-radius: 6px;
+    box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
+    color: #425857;
+    background-color: rgb(140, 5, 5);
+    padding: 0 27px 15px 25px;
+  }
+  .top, .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 28px;
+  }
+  .city {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  .weather-description {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    margin: 0;
+  }
+  
+  .weather-icon {
+    width: 70%
+  }
+  .temperature {
+    font-weight: 600;
+    font-size: 40px;
+    width: 30em;
+    letter-spacing: -5px;
+    margin: 10px 0;
+  }
+  
+  .details {
+    width: 100vw;
+    padding-left: 5px;
+  }
+  
+  .parameter-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .parameter-label {
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .parameter-value {
+    text-align: right;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  
+  .parameter-label.top {
+    border-bottom: 1px solid #fff;
+  }
+
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+};
+
+
