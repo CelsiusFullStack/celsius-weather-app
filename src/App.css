@@ -11,7 +11,7 @@ padding: 0;
 .progress{
     position: relative;
     height: 10px;
-    width: 1110%;
+    width: 50%;
     border: 10px solid #f4a261;
     border-radius: 15px;
 }
@@ -70,11 +70,11 @@ width: 100px;
   .weather-icon {
     width: 70%
   }
-  .temperature {
+ .p temperature {
     font-weight: 600;
     font-size: 40px;
     width: 30em;
-    letter-spacing: -5px;
+    letter-spacing: -1px;
     margin: 10px 0;
   }
   
