@@ -20,7 +20,7 @@ const CardWeather = ({ lat, lon,setIsLoading }) => {
                   .then(res => { 
                         setWeather(res.data)
                         const temp = {
-                              celsius:`${Math.tofixed(res.data.main.temp -273.15)} °C`,farenheit:`${Math.tofixed(res.data.main.temp -273.15) * 1.8 + 32} °F`
+                              celsius:`${Math.trunc(res.data.main.temp -273.15)} °C`,farenheit:`${Math.trunc(res.data.main.temp -273.15) * 1.8 + 32} °F`
                       }
                       setTemperature(temp)
                       setisLoading(false)
