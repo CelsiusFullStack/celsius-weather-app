@@ -9,6 +9,7 @@ padding: 0;
     align-content   : center;
 }
 .progress{
+  display: block;
     position: relative;
     height: 10px;
     width: 50%;
@@ -16,6 +17,21 @@ padding: 0;
     border-radius: 15px;
     align-content: center;
     align-items: center;
+}
+
+.progress::after{
+  display: block;
+  position: relative;
+  content:'Please waiting Wheather.!';
+  font-family: console;
+  font-size: 20px;
+  font-weight: 600;
+  z-index: 9000;
+  align-content: center;
+  text-align: center;
+  top: -10px;
+  color:crimson;
+  overflow-x: hidden;
 }
 .progress .color{
   display: flex;
@@ -28,7 +44,7 @@ width: 100px;
     width: 0px;
     height: 10px;
     border-radius: 15px;
-    animation: progres 4s infinite linear;    
+    animation: progres 3s infinite linear;    
 }
 .container {
     display: flex;
